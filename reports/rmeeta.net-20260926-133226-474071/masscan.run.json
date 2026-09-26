@@ -1,0 +1,22 @@
+{
+  "tool": "masscan",
+  "command": [
+    "masscan",
+    "57.129.71.96",
+    "-p",
+    "80,443,8000,8008,8080,8081,8088,8443,8888,9000,9090,9443",
+    "--rate",
+    "1000",
+    "--wait",
+    "2",
+    "--open",
+    "-oJ",
+    "reports/rmeeta.net-20260926-133226-474071/masscan.json"
+  ],
+  "returncode": 1,
+  "duration_seconds": 0.021,
+  "stdout_file": "reports/rmeeta.net-20260926-133226-474071/masscan.stdout.log",
+  "stderr_file": "reports/rmeeta.net-20260926-133226-474071/masscan.stderr.log",
+  "status": "error",
+  "note": ""
+}

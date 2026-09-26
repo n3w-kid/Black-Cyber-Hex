@@ -1,0 +1,17 @@
+services:
+  black-cyber-hex:
+    build: .
+    image: black-cyber-hex:latest
+    stdin_open: true
+    tty: true
+    cap_add:
+      - NET_RAW
+    network_mode: host
+    volumes:
+      - ./reports:/app/reports
+      - bch-nuclei:/root/.local/share/nuclei
+      - bch-nuclei-config:/root/.config/nuclei
+
+volumes:
+  bch-nuclei:
+  bch-nuclei-config:
